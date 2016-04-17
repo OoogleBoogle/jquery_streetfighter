@@ -7,7 +7,6 @@ body {
 .container {
     background-color: white;
     margin-top: 110px;
-    padding-left: 100px;
     min-width: 1200px;
     height: 500px;
     position: relative;
@@ -30,7 +29,7 @@ body {
 
 .ryu {
   float: left;
-  width: 659px;
+  width: 49%;
   height: 494px;
   > div {
     background-repeat: no-repeat;
@@ -103,9 +102,30 @@ body {
   font-family: 'edoregular';
   font-size: 4em;
   margin-right: 1em;
-  padding-top: .4em;
+  padding-top: 0.0009em;
   .text-2 {
     text-align: right;
   }
 }
+
+// ===================== Angry Ryu ==================================
+
+
+.ryu-angry {
+  @extend .ryu;
+  display: none;
+  float: right;
+  transform: scaleX(-1);
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
 
